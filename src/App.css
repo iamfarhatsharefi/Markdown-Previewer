@@ -1,0 +1,35 @@
+/* src/app.css */
+/* Tailwind's base, components, and utilities are already included here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for textarea and preview */
+textarea, #preview {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f7f7f7;
+}
+
+/* Responsive styles for different devices */
+@media (max-width: 768px) {
+  textarea, #preview {
+    height: 40vh;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  textarea, #preview {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  textarea, #preview {
+    height: 80vh;
+  }
+
+  #preview {
+    margin-left: 16px;
+  }
+}
