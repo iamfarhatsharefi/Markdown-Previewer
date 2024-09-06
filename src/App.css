@@ -1,35 +1,103 @@
-/* src/app.css */
-/* Tailwind's base, components, and utilities are already included here */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* General page styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4b006e 0%, #1e1e2f 100%); /* New gradient background */
+  color: #ffffff; /* Ensure text is visible on a dark background */
+}
 
-/* Custom styles for textarea and preview */
+/* Header */
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Editor and Preview styling */
 textarea, #preview {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #f7f7f7;
+  height: 100%;
+  border-radius: 8px;
 }
 
-/* Responsive styles for different devices */
+/* Textarea - editor */
+#editor {
+  background-color: #2d2d44; /* Darker background for editor */
+  color: #ffffff; /* White text color */
+  border: 2px solid #ced4da;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+#editor:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Preview - markdown result */
+#preview {
+  background-color: #1e1e2f; /* Dark background for preview */
+  color: #e0e0e0; /* Light gray text color */
+  border: 2px solid #ced4da;
+  min-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Preview Elements */
+#preview h1, #preview h2, #preview h3, #preview h4, #preview h5, #preview h6 {
+  color: #ffda79; /* Light yellow for headings */
+}
+
+#preview p {
+  color: #ffffff; /* White color for normal text */
+}
+
+#preview a {
+  color: #80bdff; /* Light blue for links */
+  text-decoration: underline;
+}
+
+#preview code {
+  background-color: #333333; /* Dark background for inline code */
+  color: #ffda79; /* Light yellow for inline code */
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+#preview pre {
+  background-color: #272727; /* Dark background for code blocks */
+  color: #ffda79; /* Light yellow for code blocks */
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+#preview blockquote {
+  color: #cccccc; /* Light gray for blockquote text */
+  border-left: 4px solid #80bdff;
+  padding-left: 10px;
+}
+
+#preview ul, #preview ol {
+  color: #ffffff; /* White for list items */
+}
+
+#preview li {
+  margin-bottom: 5px;
+}
+
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
-  textarea, #preview {
-    height: 40vh;
-    margin-bottom: 16px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  textarea, #preview {
-    height: 60vh;
-  }
-}
-
-@media (min-width: 1025px) {
-  textarea, #preview {
-    height: 80vh;
+  h1 {
+    font-size: 2.5rem;
   }
 
-  #preview {
-    margin-left: 16px;
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  textarea, #preview {
+    height: auto;
   }
 }

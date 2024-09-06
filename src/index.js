@@ -1,15 +1,12 @@
 import React from 'react';
-import Editor from './components/Editor';
-import Preview from './components/Preview';
-import './App.css';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="app">
-      <Editor />
-      <Preview />
-    </div>
-  );
-}
-
-export default App;
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
