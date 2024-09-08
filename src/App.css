@@ -1,15 +1,14 @@
-/* General page styling */
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0; /* Light background for the app container */
-  color: #333; /* Darker text for readability */
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-/* Editor Section */
 #editor {
-  background-color: #2d2d2d; /* Dark background for editor */
-  color: #ffffff; /* White text */
-  border: 2px solid #4b0082; /* Purple border */
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border: 2px solid #4b0082;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s ease;
@@ -21,11 +20,10 @@ body {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Preview Section */
 #preview {
-  background-color: #1e1e1e; /* Dark background for preview */
-  color: #dcdcdc; /* Light grey text for readability */
-  border: 2px solid #4b0082; /* Purple border */
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  border: 2px solid #4b0082;
   border-radius: 8px;
   min-height: 300px;
   overflow-y: auto;
@@ -33,61 +31,53 @@ body {
   padding: 15px;
 }
 
-/* Headings inside Preview */
 #preview h1, #preview h2, #preview h3 {
-  color: #ffd700; /* Gold for headings */
+  color: #ffd700;
 }
 
-/* Paragraphs, lists, and blockquotes */
 #preview p {
-  color: #ffffff; /* White text for normal content */
+  color: #ffffff;
 }
 
-/* List items */
 #preview ul, #preview ol, #preview li {
-  color: #ffffff !important; /* White text for list items */
-  margin-left: 20px; /* Indentation for list items */
-  list-style-type: disc; /* Ensure the list bullets are visible */
+  color: #ffffff !important;
+  margin-left: 20px;
+  list-style-type: disc;
 }
 
-/* Blockquote */
 #preview blockquote {
-  background-color: #333333; /* Darker background for blockquotes */
-  color: #ffa500; /* Orange text for blockquotes */
+  background-color: #333333;
+  color: #ffa500;
   padding: 10px;
   border-left: 5px solid #ffa500;
   margin: 10px 0;
   font-style: italic;
 }
 
-/* Bold Text */
 #preview strong {
-  color: #ff69b4; /* Hot pink for bold text */
+  color: #ff69b4; 
 }
 
-/* Link Styling */
 #preview a {
-  color: #00ffff; /* Cyan for links */
+  color: #00ffff;
   text-decoration: underline;
 }
 
-/* Code blocks */
 #preview code {
   background-color: #333;
-  color: #00ff00; /* Green text for inline code */
+  color: #00ff00;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
 #preview pre {
   background-color: #2d2d2d;
-  color: #00ff00; /* Green text */
+  color: #00ff00;
   padding: 10px;
   border-radius: 8px;
   overflow-x: auto;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
