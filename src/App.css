@@ -7,7 +7,7 @@ body {
 
 #editor {
   background-color: #2d2d2d;
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #4b0082;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -31,22 +31,24 @@ body {
   padding: 15px;
 }
 
-#preview h1, #preview h2, #preview h3 {
+#preview h1, 
+#preview h2, 
+#preview h3 {
   color: #ffd700;
 }
 
 #preview p {
-  color: #ffffff;
+  color: #ffff;
 }
 
 #preview ul, #preview ol, #preview li {
-  color: #ffffff !important;
+  color: #fff !important;
   margin-left: 20px;
   list-style-type: disc;
 }
 
 #preview blockquote {
-  background-color: #333333;
+  background-color: #333;
   color: #ffa500;
   padding: 10px;
   border-left: 5px solid #ffa500;
@@ -55,24 +57,24 @@ body {
 }
 
 #preview strong {
-  color: #ff69b4; 
+  color: #ff69b4;
 }
 
 #preview a {
-  color: #00ffff;
+  color: #0fff;
   text-decoration: underline;
 }
 
 #preview code {
   background-color: #333;
-  color: #00ff00;
+  color: #0f0;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
 #preview pre {
   background-color: #2d2d2d;
-  color: #00ff00;
+  color: #0f0;
   padding: 10px;
   border-radius: 8px;
   overflow-x: auto;
