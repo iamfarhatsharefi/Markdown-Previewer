@@ -32,7 +32,7 @@ function App() {
         <h1 className="text-dark display-4">Markdown Previewer</h1>
         <p className="lead text-muted">Convert Markdown to HTML in real-time!</p>
       </header>
-      
+
       <div className="row w-100">
         {/* Editor Section */}
         <div className="col-md-6 mb-4">
@@ -52,6 +52,7 @@ function App() {
           <div
             id="preview"
             className="border p-3 bg-white rounded shadow-sm"
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: marked(markdown) }}
           />
         </div>
