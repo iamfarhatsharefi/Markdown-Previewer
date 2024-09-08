@@ -10,5 +10,5 @@ const root = ReactDOM.createRoot(rootElement); // Use createRoot for React 18
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
