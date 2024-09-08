@@ -41,7 +41,9 @@ body {
   color: #ffff;
 }
 
-#preview ul, #preview ol, #preview li {
+#preview ul,
+#preview ol,
+#preview li {
   color: #fff !important;
   margin-left: 20px;
   list-style-type: disc;
